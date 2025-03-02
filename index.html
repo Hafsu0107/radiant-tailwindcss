@@ -11,7 +11,7 @@
   >
     <div class="w-full max-w-5xl rounded-3xl p-8">
       <!-- Navbar -->
-      <nav class="flex justify-between items-center mb-10">
+      <nav class="flex justify-between items-center mb-6">
         <div class="flex items-center space-x-2">
           <span class="w-6 h-6 bg-black rounded-full"></span>
           <span class="text-lg font-semibold">Radiant</span>
@@ -24,11 +24,18 @@
         </div>
       </nav>
 
-      <!-- Announcement -->
+      <!-- Announcement Banner -->
       <div
-        class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full w-fit mx-auto mb-6 text-sm"
+        id="announcement"
+        class="bg-pink-300 text-gray-800 px-4 py-2 rounded-full w-fit mx-auto mb-6 text-sm flex items-center justify-between space-x-4"
       >
-        Radiant raises $100M Series A from Tailwind Ventures →
+        <span>Radiant raises $100M Series A from Tailwind Ventures</span>
+        <button
+          onclick="closeAnnouncement()"
+          class="ml-2 text-black hover:text-gray-600"
+        >
+          &times;
+        </button>
       </div>
 
       <!-- Hero Section -->
@@ -41,18 +48,32 @@
           sensitive information about your customers.
         </p>
 
-        <!-- Buttons -->
+        <!-- CTA Buttons -->
         <div class="mt-6 flex justify-center space-x-4">
-          <a href="#" class="px-6 py-3 bg-black text-white rounded-full text-lg"
+          <a
+            href="#"
+            class="px-6 py-3 bg-black text-white rounded-full text-lg hover:bg-gray-900"
             >Get started</a
           >
           <a
             href="#"
-            class="px-6 py-3 bg-white text-black border border-gray-300 rounded-full text-lg shadow-md"
+            class="px-6 py-3 bg-pink-200 text-black border border-gray-300 rounded-full text-lg shadow-md hover:bg-pink-300"
             >See pricing</a
           >
         </div>
       </div>
     </div>
+
+    <!-- JavaScript for Announcement Banner -->
+    <script>
+      function closeAnnouncement() {
+        document.getElementById("announcement").style.display = "none";
+      }
+
+      // Auto-hide banner after 5 seconds
+      setTimeout(() => {
+        closeAnnouncement();
+      }, 5000);
+    </script>
   </body>
 </html>
