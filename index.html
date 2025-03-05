@@ -7,81 +7,111 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="flex justify-center items-center min-h-screen bg-gradient-to-br from-yellow-200 via-pink-300 to-purple-400"
+    class="justify-center items-center min-h-screen bg-gradient-to-br from-yellow-200 via-pink-300 to-purple-400"
   >
-    <div class="w-full max-w-5xl rounded-3xl p-8">
-      <!-- Navbar -->
-      <nav class="flex justify-between items-center mb-6 text-left">
-        <div class="flex items-center space-x-2">
-          <span class="w-5 h-5 bg-black rounded-full"></span>
-          <span class="text-lg font-semibold">Radiant</span>
-        </div>
-        <div class="hidden md:flex space-x-6 text-gray-800 font-bold">
-          <a href="#" class="hover:underline">Pricing</a>
-          <a href="#" class="hover:underline">Company</a>
-          <a href="#" class="hover:underline">Blog</a>
-          <a href="#" class="hover:underline">Login</a>
-        </div>
-      </nav>
+    <section class="">
+      <div class="w-full max-w-5xl rounded-3xl p-8">
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center mb-6 text-left">
+          <div class="flex items-center space-x-2">
+            <span class="w-5 h-5 bg-black rounded-full"></span>
+            <span class="text-lg font-semibold">Radiant</span>
+          </div>
+          <div class="hidden md:flex space-x-6 text-gray-800 font-bold">
+            <a href="#" class="hover:underline">Pricing</a>
+            <a href="#" class="hover:underline">Company</a>
+            <a href="#" class="hover:underline">Blog</a>
+            <a href="#" class="hover:underline">Login</a>
+          </div>
+        </nav>
 
-      <!-- Announcement Banner -->
-      <div
-        id="announcement"
-        class="bg-pink-300 text-gray-800 px-4 py-2 rounded-full w-fit mx-auto mb-6 text-sm flex items-center justify-between space-x-4"
-      >
-        <span>Radiant raises $100M Series A from Tailwind Ventures</span>
-        <button
-          onclick="closeAnnouncement()"
-          class="ml-2 text-black hover:text-gray-600"
+        <!-- Announcement Banner -->
+        <div
+          id="announcement"
+          class="bg-pink-300 text-gray-800 px-4 py-2 rounded-full w-fit mx-auto mb-6 text-sm flex items-center justify-between space-x-4"
         >
-          &times;
-        </button>
-      </div>
-
-      <!-- Hero Section -->
-      <div class="text-center">
-        <h1 class="text-8xl font-bold text-black text-left leading-tight">
-          Close every deal.
-        </h1>
-        <p class="text-gray-700 mt-4 font-bold text-6x1 text-left text-lg">
-          Radiant helps you sell more by revealing<br />
-          sensitive information about your customers.
-        </p>
-
-        <!-- CTA Buttons -->
-        <div class="mt-6 flex mr-5x1justify-center space-x-4">
-          <a
-            href="#"
-            class="px-9 py-2 bg-black items-center text-white rounded-full text-lg hover:bg-gray-900"
-            >Get started</a
+          <span>Radiant raises $100M Series A from Tailwind Ventures</span>
+          <button
+            onclick="closeAnnouncement()"
+            class="ml-2 text-black hover:text-gray-600"
           >
-          <a
-            href="#"
-            class="px-9 text-2x1 py-2 bg-pink-200 text-black border border-gray-300 rounded-full text-lg shadow-md hover:bg-pink-300"
-            >See pricing</a
-          >
+            &times;
+          </button>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="text-center">
+          <h1 class="text-8xl font-bold text-black text-left leading-tight">
+            Close every deal.
+          </h1>
+          <p class="text-gray-700 mt-4 font-bold text-6x1 text-left text-lg">
+            Radiant helps you sell more by revealing<br />
+            sensitive information about your customers.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="mt-6 flex mr-5x1justify-center space-x-4">
+            <a
+              href="#"
+              class="px-9 py-2 bg-black items-center text-white rounded-full text-lg hover:bg-gray-900"
+              >Get started</a
+            >
+            <a
+              href="#"
+              class="px-9 text-2x1 py-2 bg-pink-200 text-black border border-gray-300 rounded-full text-lg shadow-md hover:bg-pink-300"
+              >See pricing</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-    <section class="two">
-      <div class="flex">
-        <img
-          src="https://radiant.tailwindui.com/logo-cloud/savvycal.svg"
-          alt=""
-        />
-        <img
-          src="https://radiant.tailwindui.com/logo-cloud/laravel.svg"
-          alt=""
-        />
-        <img src="https://radiant.tailwindui.com/logo-cloud/tuple.svg" alt="" />
-        <img
-          src="https://radiant.tailwindui.com/logo-cloud/transistor.svg"
-          alt=""
-        />
-        <img
-          src="https://radiant.tailwindui.com/logo-cloud/statamic.svg"
-          alt=""
-        />
+    </section>
+
+    <section class="bg-white">
+      <div class="max-w-9xl mx-auto px-6 py-12">
+        <div class="flex justify-center items-center space-x-16">
+          <img
+            src=" https://radiant.tailwindui.com/logo-cloud/savvycal.svg"
+            alt="SavvyCal"
+            class="h-12"
+          />
+          <img
+            src="https://radiant.tailwindui.com/logo-cloud/laravel.svg"
+            alt="Laravel"
+            class="h-12"
+          />
+          <img
+            src="https://radiant.tailwindui.com/logo-cloud/tuple.svg"
+            alt="Tuple"
+            class="h-12"
+          />
+          <img
+            src="https://radiant.tailwindui.com/logo-cloud/transistor.svg"
+            alt="Transistor"
+            class="h-12"
+          />
+          <img
+            src="https://radiant.tailwindui.com/logo-cloud/statamic.svg"
+            alt="Statamic"
+            class="h-12"
+          />
+        </div>
+        <h2 class="text-5xl font-bold text-black py-12 leading-tight">
+          A snapshot of your entire <br />
+          sales pipeline.
+        </h2>
+        <div><img src="pipeline-img.png " alt="" /></div>
+        <div class="text-left">
+          <p
+            class="text-xs font-semibold text-gray-400 tracking-widest uppercase"
+          >
+            Sales
+          </p>
+          <h1 class="text-5xl font-bold text-black leading-tight">
+            Know more about your <br />
+            customers than they do.
+          </h1>
+          
+        </div>
       </div>
     </section>
 
