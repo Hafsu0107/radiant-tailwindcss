@@ -6,10 +6,10 @@
     <title>Radiant - Close Every Deal</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body
-    class="justify-center items-center min-h-screen bg-gradient-to-br from-yellow-200 via-pink-300 to-purple-400"
-  >
-    <section class="">
+  <body>
+    <section
+      class="justify-center items-center min-h-screen bg-gradient-to-br from-yellow-200 via-pink-300 to-purple-400"
+    >
       <div class="w-full max-w-5xl rounded-3xl p-8">
         <!-- Navbar -->
         <nav class="flex justify-between items-center mb-6 text-left">
@@ -110,21 +110,464 @@
             Know more about your <br />
             customers than they do.
           </h1>
-          
+          <div class="max-w-6xl w-full grid grid-cols-2 gap-6">
+            <!-- User Profile Card -->
+            <div class="bg-white shadow-md rounded-xl p-6">
+              <div class="flex items-center space-x-4">
+                <img
+                  src="https://i.pravatar.cc/80"
+                  alt="User Avatar"
+                  class="w-16 h-16 rounded-full"
+                />
+                <div>
+                  <h2 class="text-xl font-semibold">Amy Lichty</h2>
+                  <p class="text-gray-500 text-sm">
+                    Head of Marketing · <span class="font-medium">$40,000</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tabs -->
+              <div class="flex space-x-4 mt-4 border-b">
+                <button
+                  class="pb-2 border-b-2 border-black text-black font-medium"
+                >
+                  Summary
+                </button>
+                <button class="text-gray-500 pb-2">Finances</button>
+                <button class="text-gray-500 pb-2">Work History</button>
+                <button class="text-gray-500 pb-2">Medical Records</button>
+                <button class="text-gray-500 pb-2">Tax Filings</button>
+              </div>
+
+              <!-- User Info -->
+              <div class="mt-4 text-gray-600 text-sm">
+                <div class="flex justify-between">
+                  <span class="font-medium">Marital Status</span>
+                  <span>Divorced</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-medium">Age</span> <span>34</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-medium">Kids</span>
+                  <span>Brian (5), Emily (2)</span>
+                </div>
+                <div class="flex justify-between text-gray-400">
+                  <span class="font-medium">SSN</span> <span>384 218 194</span>
+                </div>
+              </div>
+
+              <!-- Insight -->
+              <div class="mt-6">
+                <p class="text-xs font-semibold text-gray-500 uppercase">
+                  Insight
+                </p>
+                <h3 class="text-lg font-semibold">Get perfect clarity</h3>
+                <p class="text-gray-500 text-sm">
+                  Radiant uses social engineering to build a detailed financial
+                  picture of your leads. Know their budget, compensation
+                  package, social security number, and more.
+                </p>
+              </div>
+            </div>
+
+            <!-- Competitors Card -->
+            <div class="bg-white shadow-md rounded-xl p-6">
+              <h2 class="text-xl font-semibold">Competitors</h2>
+
+              <!-- Filters -->
+              <div class="flex space-x-4 mt-3">
+                <button class="border px-3 py-1 rounded-md text-gray-600">
+                  All competitors ▼
+                </button>
+                <button
+                  class="border px-3 py-1 rounded-md text-gray-600 flex items-center space-x-1"
+                >
+                  <span>Filter</span>
+                  <span
+                    class="bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full"
+                    >3</span
+                  >
+                </button>
+              </div>
+
+              <!-- Table -->
+              <table class="w-full mt-4 text-sm text-gray-600">
+                <thead class="text-gray-500 text-xs uppercase">
+                  <tr>
+                    <th class="text-left">Competitor</th>
+                    <th class="text-left">Stage</th>
+                    <th class="text-left">Next Meeting</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-t">
+                    <td class="flex items-center space-x-2 py-2">
+                      <span
+                        class="bg-purple-500 text-white px-2 py-1 rounded-full text-xs"
+                        >A</span
+                      >
+                      <span>Ashby</span>
+                    </td>
+                    <td>Proposal Made</td>
+                    <td>
+                      <span
+                        class="bg-red-200 text-red-600 px-2 py-1 text-xs rounded"
+                        >Tomorrow</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="border-t">
+                    <td class="flex items-center space-x-2 py-2">
+                      <span
+                        class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs"
+                        >B</span
+                      >
+                      <span>Breezy HR</span>
+                    </td>
+                    <td>Contact Made</td>
+                    <td>
+                      <span
+                        class="bg-yellow-200 text-yellow-600 px-2 py-1 text-xs rounded"
+                        >In 3 days</span
+                      >
+                    </td>
+                  </tr>
+                  <tr class="border-t">
+                    <td class="flex items-center space-x-2 py-2">
+                      <span
+                        class="bg-orange-300 text-white px-2 py-1 rounded-full text-xs"
+                        >P</span
+                      >
+                      <span>Pinpoint</span>
+                    </td>
+                    <td>Contact Made</td>
+                    <td>
+                      <span
+                        class="bg-gray-200 text-gray-600 px-2 py-1 text-xs rounded"
+                        >In 2 weeks</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- Analysis -->
+              <div class="mt-6">
+                <p class="text-xs font-semibold text-gray-500 uppercase">
+                  Analysis
+                </p>
+                <h3 class="text-lg font-semibold">Undercut your competitors</h3>
+                <p class="text-gray-500 text-sm">
+                  With our advanced data mining, you’ll know which companies
+                  your leads are talking to and exactly how much they’re being
+                  charged.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-6xl w-full grid grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center"
+        >
+          <img src="keyboard-pic.png" alt="Keyboard Image" class="mb-4" />
+          <p class="text-xs font-semibold text-gray-500 uppercase">Speed</p>
+          <h2 class="text-xl font-semibold mt-2">Built for power users</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            It’s never been faster to cold email your entire contact list using
+            our streamlined keyboard shortcuts.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center"
+        >
+          <img src="network-pic.png" alt="Network Image" class="mb-4" />
+          <p class="text-xs font-semibold text-gray-500 uppercase">Source</p>
+          <h2 class="text-xl font-semibold mt-2">Get the furthest reach</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Bypass those inconvenient privacy laws to source leads from the most
+            unexpected places.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white shadow-md rounded-xl p-6 flex flex-col items-center text-center"
+        >
+          <img src="global image.png" alt="Global Image" class="mb-4" />
+          <p class="text-xs font-semibold text-gray-500 uppercase">Limitless</p>
+          <h2 class="text-xl font-semibold mt-2">Sell globally</h2>
+          <p class="text-gray-600 text-sm mt-2">
+            Radiant helps you sell in locations currently under international
+            embargo.
+          </p>
         </div>
       </div>
     </section>
+    <section
+      class="bg-[#0F172A] text-white p-10 flex justify-center items-center min-h-screen"
+    >
+      <div class="max-w-6xl w-full">
+        <!-- Header Section -->
+        <div class="p-10 bg-[#0F172A]">
+          <p
+            class="text-sm font-semibold text-gray-400 uppercase tracking-wide"
+          >
+            Outreach
+          </p>
+          <h1 class="text-5xl font-semibold mt-2">
+            Customer outreach has never been easier.
+          </h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <!-- Chat Window -->
+          <div class="bg-[#161B22] p-6 rounded-lg shadow-md">
+            <p class="text-gray-400 text-sm">
+              I got your details from Megan Dunfold and she mentioned Vandelay
+              was looking for an AST...
+            </p>
+            <div class="flex items-center space-x-4 mt-4">
+              <img
+                src="https://via.placeholder.com/40"
+                class="w-10 h-10 rounded-full"
+                alt="User"
+              />
+              <div>
+                <p class="font-semibold">
+                  Doug Jacobs
+                  <span class="text-gray-500 text-sm"
+                    >• CSO at Vandelay Industries</span
+                  >
+                </p>
+                <p class="mt-1 text-gray-300">
+                  Hey Enrique,
+                  <span
+                    class="bg-red-600 text-xs text-white px-2 py-1 rounded ml-2"
+                    >Lie Detected</span
+                  >
+                </p>
+                <p class="mt-1 bg-gray-700 p-2 rounded inline-block">
+                  I'm actually on vacation this week and
+                  <span class="bg-yellow-500 text-xs px-1 rounded"
+                    >Unlikely</span
+                  >
+                  I'm not sure what my availability is.
+                </p>
+              </div>
+            </div>
+            <input
+              type="text"
+              placeholder="Write message..."
+              class="mt-4 w-full p-3 bg-gray-800 rounded-md text-white placeholder-gray-500"
+            />
+            <button
+              class="mt-2 bg-blue-600 px-4 py-2 rounded text-white float-right"
+            >
+              Send
+            </button>
+          </div>
 
-    <!-- JavaScript for Announcement Banner -->
-    <script>
-      function closeAnnouncement() {
-        document.getElementById("announcement").style.display = "none";
-      }
+          <!-- Integration Section -->
+          <div class="bg-[#161B22] p-6 rounded-lg shadow-md">
+            <p class="text-gray-400 text-sm uppercase tracking-wide">
+              Integrations
+            </p>
+            <h2 class="text-xl font-semibold mt-2">
+              Meet leads where they are
+            </h2>
+            <p class="text-gray-400 mt-2">
+              With thousands of integrations, no one will be able to escape your
+              cold outreach.
+            </p>
 
-      // Auto-hide banner after 5 seconds
-      setTimeout(() => {
-        closeAnnouncement();
-      }, 5000);
-    </script>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <span class="bg-gray-800 px-3 py-2 rounded text-gray-300"
+                >Slack</span
+              >
+              <span class="bg-gray-800 px-3 py-2 rounded text-gray-300"
+                >Gmail</span
+              >
+              <span class="bg-gray-800 px-3 py-2 rounded text-gray-300"
+                >Discord</span
+              >
+              <span class="bg-gray-800 px-3 py-2 rounded text-gray-300"
+                >Asana</span
+              >
+              <span class="bg-gray-800 px-3 py-2 rounded text-gray-300"
+                >Basecamp</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Networking Section -->
+        <div class="mt-6 bg-[#161B22] p-6 rounded-lg shadow-md">
+          <p class="text-gray-400 text-sm uppercase tracking-wide">
+            Networking
+          </p>
+          <h2 class="text-xl font-semibold mt-2">Sell at the speed of light</h2>
+          <p class="text-gray-400 mt-2">
+            Our RadiantAI chat assistants analyze the sentiment of your
+            conversations in real-time, ensuring you're always one step ahead.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-white text-black p-10 flex justify-center items-center min-h-screen"
+    >
+      <div class="max-w-6xl w-full text-center">
+        <!-- Heading Section -->
+        <p class="text-gray-500 uppercase tracking-widest text-sm">
+          What everyone is saying
+        </p>
+        <h2 class="text-4xl font-bold mt-2">Trusted by professionals.</h2>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          <!-- Testimonial 1 -->
+          <div class="relative bg-black rounded-lg overflow-hidden shadow-md">
+            <img
+              src="tina-yards image.jpg"
+              alt="Person 1"
+              class="w-full h-80 object-cover"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6"
+            >
+              <p class="text-white text-lg font-medium">
+                “Thanks to Radiant, we’re finding new leads that we never would
+                have found with legal methods.”
+              </p>
+              <hr class="border-gray-500 my-3" />
+              <p class="text-gray-300 font-semibold">Tina Yards</p>
+              <p class="text-purple-400 text-sm">
+                VP of Sales, <span class="text-purple-600">Protocol</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="relative bg-black rounded-lg overflow-hidden shadow-md">
+            <img
+              src="download.jpg"
+              alt="Person 2"
+              class="w-full h-80 object-cover"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6"
+            >
+              <p class="text-white text-lg font-medium">
+                “Radiant made undercutting all of our competitors an absolute
+                breeze.”
+              </p>
+              <hr class="border-gray-500 my-3" />
+              <p class="text-gray-300 font-semibold">Conor Neville</p>
+              <p class="text-yellow-400 text-sm">
+                Head of Customer Success,
+                <span class="text-pink-400">TaxPal</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="relative bg-black rounded-lg overflow-hidden shadow-md">
+            <img
+              src="Amy-Chase-600.jpg"
+              alt="Person 3"
+              class="w-full h-80 object-cover"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6"
+            >
+              <p class="text-white text-lg font-medium">
+                “We closed a deal in literally a few minutes because we knew
+                their exact budget.”
+              </p>
+              <hr class="border-gray-500 my-3" />
+              <p class="text-gray-300 font-semibold">Amy Chase</p>
+              <p class="text-yellow-400 text-sm">
+                Head of GTM, <span class="text-pink-400">Pocket</span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center max-w-xl w-full">
+            <!-- Call to Action Section -->
+            <p class="text-gray-500 text-lg">
+              Join the best sellers in the business and start using Radiant to
+              hit your targets today.
+            </p>
+            <button
+              class="mt-4 px-6 py-3 bg-pink-600 text-white font-semibold text-lg rounded-full hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+            >
+              Get started <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white border-gray-500">
+      <div class="text-center max-w-5xl w-full mx-auto">
+        <!-- Heading Section -->
+        <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+          Get started
+        </p>
+        <h1 class="text-4xl font-bold mt-2 text-black">
+          Ready to dive in? Start your free trial today.
+        </h1>
+        <p class="text-lg text-gray-600 mt-4">
+          Get the cheat codes for selling and unlock your team’s revenue
+          potential.
+        </p>
+
+        <!-- Call to Action Button -->
+        <button
+          class="mt-6 px-6 py-3 bg-black text-white font-semibold text-lg rounded-full hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-opacity-50"
+        >
+          Get started <span>&#8594;</span>
+        </button>
+
+        <!-- Footer Section -->
+        <div class="mt-12 text-gray-600">
+          <footer class="border-t pt-8">
+            <div class="flex justify-between">
+              <div class="space-x-6">
+                <span>Product</span>
+                <span>Pricing</span>
+                <span>Analysis</span>
+                <span>API</span>
+              </div>
+              <div class="space-x-6">
+                <span>Company</span>
+                <span>Careers</span>
+                <span>Blog</span>
+                <span>Company</span>
+              </div>
+              <div class="space-x-6">
+                <span>Support</span>
+                <span>Help Center</span>
+                <span>Community</span>
+              </div>
+            </div>
+            <div class="mt-6 flex justify-center space-x-4">
+              <span>© 2025 Radiant Inc.</span>
+              <span>Terms of Service</span>
+              <span>Privacy Policy</span>
+            </div>
+            <div class="mt-4 flex justify-center space-x-4">
+              <a href="#" class="text-gray-600 hover:text-gray-800">Facebook</a>
+              <a href="#" class="text-gray-600 hover:text-gray-800">X</a>
+              <a href="#" class="text-gray-600 hover:text-gray-800">LinkedIn</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
